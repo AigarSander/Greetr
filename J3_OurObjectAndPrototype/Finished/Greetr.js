@@ -1,9 +1,9 @@
-//turvaline/privaatne objekt, mille sisenditeks on globaalne väärtus ja jquery väärtus.
+//turvaline/privaatne objekt, mille sisenditeks on globaalne väärtus ja jquery väärtus
 (function(global, $) {
 
     //uus objekt sisenditega firstName, lastName ja language
     var Greetr = function(firstName, lastName, language) {
-        //tagastab selle objekti uue init funktsiooni.
+        //tagastab selle objekti uue init funktsiooni
         return new Greetr.init(firstName, lastName, language);   
     }
 
@@ -14,11 +14,11 @@
     Greetr.init = function(firstName, lastName, language) {
         //muutuja self mis viitab sellele objektile.
         var self = this;
-        //muudab selle objekti muutuja 'firstName' sisendiks (firstName) või vaikimisi väärtuseks ''.
+        //muudab selle objekti muutuja 'firstName' sisendiks (firstName) või vaikimisi väärtuseks ''
         self.firstName = firstName || '';
-        //muudab selle objekti muutuja 'lastName' sisendiks (lastName) või vaikimisi väärtuseks ''.
+        //muudab selle objekti muutuja 'lastName' sisendiks (lastName) või vaikimisi väärtuseks ''
         self.lastName = lastName || '';
-        //muudab selle objekti muutuja 'language' sisendiks (language) või vaikimisi väärtuseks 'en'.
+        //muudab selle objekti muutuja 'language' sisendiks (language) või vaikimisi väärtuseks 'en'
         self.language = language || 'en';
 
     }
