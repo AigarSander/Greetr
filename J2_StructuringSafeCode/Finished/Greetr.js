@@ -1,6 +1,5 @@
-//Teeb uue objeki, funktsioon mille sisenditeks on global ja $
+//koheselt aktiveeritud funktsioon, mille sisenditeks on globaalne objekt ja jquery objekt
 (function(global, $) {
-//   funktsiooni struktuur on tühi
-    
-//peale funktsiooni tegemist, on kohe funktsioonile sisestatud window ja JQuery.
+
+//funkstioonile sisestatakse koheselet globaalne objekt window ja jquery objekt
 }(window, jQuery));
