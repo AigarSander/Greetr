@@ -12,19 +12,25 @@
 
     //privaatne objekt
     var greetings = {
+        //määraja ja väärtus
         en: 'Hello',
+        //määraja ja väärtus
         es: 'Hola'
     };
 
     //privaatne objekt
     var formalGreetings = {
+        //määraja ja väärtus
         en: 'Greetings',
+        //määraja ja väärtus
         es: 'Saludos'
     };
 
     //privaatne objekt
     var logMessages = {
+        //määraja ja väärtus
         en: 'Logged in',
+        //määraja ja väärtus
         es: 'Inició sesión'
     };
 
