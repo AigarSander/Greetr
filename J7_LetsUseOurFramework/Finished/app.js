@@ -12,7 +12,7 @@ $('#login').click(function() {
      // peidab logindiv'i
     $('#logindiv').hide();
     
-     // väljasta HTML sõnum(tervitus), ja logi
+     // väljasta HTML sõnum(tervitus), ja logi.
     loginGrtr.setLang($('#lang').val()).HTMLGreeting('#greeting', true).log();
     
 });
