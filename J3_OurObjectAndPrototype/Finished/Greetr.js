@@ -24,7 +24,7 @@
     //muudab objekti nii, et selle tegemseks ei pea enam kasutama 'new' võtmesõna
     Greetr.init.prototype = Greetr.prototype;
     
-    // kinnitab Greetr globaalsele objektile ja annab sellele lühendi $G
+    // kinnitab Greetr globaalsele objektile ja annab sellele lühendi $G.
     global.Greetr = global.G$ = Greetr;
 
 }(window, jQuery));
