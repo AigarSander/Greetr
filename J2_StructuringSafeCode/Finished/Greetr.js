@@ -1,5 +1,4 @@
-//koheselt aktiveeritud funktsioon, mille sisenditeks on globaalne väärtus ja jquery väärtus
+//turvaline/privaatne objekt, mille sisenditeks on globaalne väärtus ja jquery väärtus
 (function(global, $) {
 
-//funkstioonile sisestatakse koheselet globaalne väärtus window ja jquery väärtus
-}(window, jQuery));
+}(window, jQuery)); //funkstioonile sisestatakse globaalne väärtus window ja jquery väärtus

@@ -1,16 +1,14 @@
-//turvaline/privaatne objekt, mille sisenditeks on globaalne väärtus ja jquery väärtus
 (function(global, $) {
 
-    //uus objekt sisenditega firstName, lastName ja language
+    //teeb uue objekti
     var Greetr = function(firstName, lastName, language) {
-        //tagastab selle objekti uue init funktsiooni
         return new Greetr.init(firstName, lastName, language);   
     }
 
-    //määrab objektile prototüübi
+    //prototüüp hoiab objekti meetodeid
     Greetr.prototype = {};
 
-    //määrab objektile Greetr init funktsiooni sisenditega firstName, lastName ja language.
+    // tegelik objekt tehakse siin, lubamaks teha uut objekti ilma 'new' kasutamata
     Greetr.init = function(firstName, lastName, language) {
         //muutuja self mis viitab sellele objektile.
         var self = this;
@@ -23,11 +21,10 @@
 
     }
 
-    //paneb init funktsiooni prototüübi võrduma objekti prototüübiga.
+    //muudab objekti nii, et selle tegemseks ei pea enam kasutama 'new' võtmesõna
     Greetr.init.prototype = Greetr.prototype;
-
-    //Teeb Greeter funktsiooni globaalseks aliasega G$
+    
+    // kinnitab Greetr globaalsele objektile ja annab sellele lühendi $G
     global.Greetr = global.G$ = Greetr;
 
-//funkstioonile sisestatakse globaalne väärtus window ja jquery väärtus
 }(window, jQuery));
