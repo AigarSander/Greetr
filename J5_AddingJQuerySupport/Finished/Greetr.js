@@ -95,7 +95,7 @@
                 msg = this.greeting();   
             }
 
-            //sisestab jQuery selectori html ossa määraja msg väärtuse.
+            //sisestab jQuery selectori html ossa määraja msg väärtuse
             $(selector).html(msg);
 
             return this;
