@@ -104,7 +104,7 @@
         self.firstName = firstName || '';
         self.lastName = lastName || '';
         self.language = language || 'en';
-        //valideerib keele
+        //valideerib keele.
         self.validate();
     }
 
